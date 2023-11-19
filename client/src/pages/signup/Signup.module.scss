@@ -1,0 +1,81 @@
+@import "../../assets/styles/variables";
+
+.signupPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .signupForm {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 30px;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #141414;
+      padding: 15px;
+      color: $black;
+      font-family: $fontFamily;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      &::placeholder {
+        color: #d9d9d9;
+      }
+    }
+    .radio {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: auto auto;
+      label {
+        display: flex;
+        align-items: center;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+    .signupBtn {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      button {
+        padding: 10px 30px;
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none;
+        outline: 1px;
+        outline-style: solid;
+        cursor: pointer;
+        background: none;
+        transition: 0.3s ease;
+        outline-color: $primaryColor;
+        background: $primaryColor;
+        color: $white;
+        &:hover {
+          background: none;
+          color: $primaryColor;
+        }
+        &:focus {
+          outline: 1px solid $primaryColor;
+        }
+      }
+    }
+    .login {
+      margin-top: 20px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $primaryColor;
+        margin-left: 10px;
+      }
+    }
+  }
+}

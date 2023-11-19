@@ -1,0 +1,162 @@
+@import "../../assets/styles/variables";
+
+.productsPage {
+  margin-top: 60px;
+  padding: 20px;
+  .tableHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    input {
+      padding: 15px;
+    }
+    button {
+      padding: 10px 30px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      outline: 1px;
+      outline-style: solid;
+      cursor: pointer;
+      background: none;
+      transition: 0.3s ease;
+      outline-color: $primaryColor;
+      background: $primaryColor;
+      color: $white;
+      &:hover {
+        background: none;
+        color: $primaryColor;
+      }
+      &:focus {
+        outline: 1px solid $primaryColor;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    td,
+    th {
+      text-align: left;
+      padding: 10px;
+      background-color: #5b5b5b;
+      color: $white;
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  padding: 30px;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #141414;
+    padding: 15px;
+    color: $black;
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    &::placeholder {
+      color: #d9d9d9;
+    }
+  }
+  .popupBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    button {
+      padding: 10px 30px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      outline: 1px;
+      outline-style: solid;
+      cursor: pointer;
+      background: none;
+      transition: 0.3s ease;
+      outline-color: $primaryColor;
+      background: $primaryColor;
+      color: $white;
+      &:hover {
+        background: none;
+        color: $primaryColor;
+      }
+      &:focus {
+        outline: 1px solid $primaryColor;
+      }
+    }
+  }
+  .deleteActions {
+    display: flex;
+    justify-content: flex-end;
+    .cancelBtn {
+      margin-right: 10px;
+      padding: 10px 30px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      outline: 1px;
+      outline-style: solid;
+      cursor: pointer;
+      background: none;
+      transition: 0.3s ease;
+      outline-color: $primaryColor;
+      background: $primaryColor;
+      color: $white;
+      &:hover {
+        background: none;
+        color: $primaryColor;
+      }
+      &:focus {
+        outline: 1px solid $primaryColor;
+      }
+    }
+    .deleteBtn {
+      margin-right: 10px;
+      padding: 10px 30px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      outline: 1px;
+      outline-style: solid;
+      cursor: pointer;
+      background: none;
+      transition: 0.3s ease;
+      outline-color: #db3a3a;
+      background: #db3a3a;
+      color: $white;
+      &:hover {
+        background: none;
+        color: #db3a3a;
+      }
+      &:focus {
+        outline: 1px solid #db3a3a;
+      }
+    }
+  }
+}

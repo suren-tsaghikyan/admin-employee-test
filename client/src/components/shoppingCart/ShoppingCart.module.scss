@@ -1,0 +1,44 @@
+@import "../../assets/styles/variables";
+
+.shoppingCart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .totalSection {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    .total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid $black;
+      padding: 5px;
+    }
+    button {
+      padding: 5px 30px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+      outline: 1px;
+      outline-style: solid;
+      cursor: pointer;
+      background: none;
+      transition: 0.3s ease;
+      outline-color: $primaryColor;
+      background: $primaryColor;
+      color: $white;
+      &:hover {
+        background: none;
+        color: $primaryColor;
+      }
+      &:focus {
+        outline: 1px solid $primaryColor;
+      }
+    }
+  }
+}

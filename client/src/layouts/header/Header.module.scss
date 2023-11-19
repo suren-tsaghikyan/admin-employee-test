@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+
+header {
+  padding: 20px;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          color: $black;
+          text-decoration: none;
+          font-family: $fontFamily;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          &.active {
+            font-weight: 600;
+            color: $primaryColor;
+          }
+        }
+        &:not(:last-of-type) {
+          margin-right: 24px;
+        }
+      }
+    }
+    .userInfo {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      align-items: center;
+      button {
+        padding: 5px 20px;
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none;
+        outline: 1px;
+        outline-style: solid;
+        cursor: pointer;
+        background: none;
+        transition: 0.3s ease;
+        outline-color: $primaryColor;
+        background: $primaryColor;
+        color: $white;
+        &:hover {
+          background: none;
+          color: $primaryColor;
+        }
+        &:focus {
+          outline: 1px solid $primaryColor;
+        }
+      }
+    }
+  }
+}
